@@ -1,0 +1,59 @@
+{
+	"name": "ubuntu-python-poetry-jupyter",
+	"build": {
+		"dockerfile": "Dockerfile",
+		"context": ".."
+	},
+	
+	// "features": {
+	// 	"ghcr.io/devcontainers/features/node:1":{}
+	// },
+
+	// Use 'forwardPorts' to make a list of ports inside the container available locally.
+	// "forwardPorts": [],
+
+	// Use 'postCreateCommand' to run commands after the container is created.
+	// "postCreateCommand": "ls -la",
+
+	// Configure tool-specific properties.
+	"customizations": {
+		"vscode": {
+			"extensions": [
+				"aaron-bond.better-comments",
+				"almenon.arepl",
+				"cstrap.python-snippets",
+				"deerawan.vscode-dash",
+				"esbenp.prettier-vscode",
+				"frhtylcn.pythonsnippets",
+				"github.copilot",
+				"github.copilot-chat",
+				"hbenl.vscode-test-explorer",
+				"kevinrose.vsc-python-indent",
+				"leetcode.vscode-leetcode",
+				"littlefoxteam.vscode-python-test-adapter",
+				"mechatroner.rainbow-csv",
+				"ms-python.debugpy",
+				"ms-python.python",
+				"ms-python.vscode-pylance",
+				"ms-toolsai.datawrangler",
+				"ms-toolsai.jupyter",
+				"ms-toolsai.jupyter-keymap",
+				"ms-toolsai.jupyter-renderers",
+				"ms-toolsai.vscode-jupyter-cell-tags",
+				"ms-toolsai.vscode-jupyter-slideshow",
+				"ms-vscode.test-adapter-converter",
+				"njpwerner.autodocstring",
+				"tamasfe.even-better-toml",
+				"tushortz.python-extended-snippets"
+			],
+			"settings": {
+				"python.REPL.sendToNativeREPL": true,
+				"python.venvPath": "/root/.cache/pypoetry/virtualenvs/poetry-env-py3.10",
+				"python.terminal.activateEnvironment": true
+			}
+		}
+	},
+
+	// Uncomment to connect as root instead. More info: https://aka.ms/dev-containers-non-root.
+	"remoteUser": "root"
+}
